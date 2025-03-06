@@ -42,7 +42,9 @@ public class WriteLoops {
 
         // Write a FOR loop that makes 10 iterations, start at 21.
         // calling
-        w = w + 1;
+        for (int i = 10; i < 21; i++) {
+            w = w + 1;
+        }
         // each time through the loop
         
         return w;
@@ -53,7 +55,9 @@ public class WriteLoops {
 
         // Write a FOR loop that counts down from 100 to 0.
         // calling
-        w = w + 1;
+        for (int i = 100; i > 0; i--) {
+            w = w + 1;
+        }
         // each time through the loop
         
         return w;
@@ -64,7 +68,9 @@ public class WriteLoops {
 
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
-        w = w + 1;
+        for (int i = 0; i <= 32; i += 2) {
+            w = w + 1;
+        }
         // each time through the loop
         return w;
     }
@@ -74,9 +80,10 @@ public class WriteLoops {
 
         // Write a FOR loop from 1 to less than 5001 by 11s.
         // calling
-        w = w + 1;
+        for (int i = 5001; i > 0; i -= 11) {
+            w = w + 1;
+        }
         // each time through the loop
-        
         return w;
     }
 
@@ -85,10 +92,12 @@ public class WriteLoops {
 
         // Write a nested FOR loop(s), where one counts from
         // 0 to less than 20 and the inner one counts from 0 to 4
+        for (int i = 0; i < 20; i++) {
+            for (int j = 0; j <= 4; j++) {
                 // calling
                 w = w + 1;
-                // each time through the inner loop
-
+            }// each time through the inner loop
+        }
         return w;
     }
 
@@ -99,11 +108,15 @@ public class WriteLoops {
         // statement inside the loop that checks the
         // loop index counter and if it’s greater than 51,
         // prints “Hello Zipcode” instead of the statement w = w + 1;
-
-                // calling
+        for (int i = 5; i <= 105; i++) {
+            // calling
+            if (i > 51) {
+                System.out.println("Hello Zipcode");
+            } else {
                 w = w + 1;
+            }
             // each time through the inner loop
-        
+        }
         return w;
     }
 
