@@ -9,7 +9,10 @@ public class WriteIFs
 {
  
     public void playerDied(boolean player1) {
-        // Write an IF statement that checks “player1.isAlive()” 
+        if (this.isAlive(player1)) {
+            this.displayGameOver(player1);
+        }
+        // Write an IF statement that checks “player1.isAlive()”
         // and if that’s false, calls “displayGameOver(player1)”
      
     }
